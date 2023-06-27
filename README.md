@@ -10,7 +10,7 @@ Below is an approximate structure of our project where we first load the impleme
 
 1. int remote_gpio_request_one(int service_num, unsigned int gpio, unsigned long flags, char* label);
 
-    - this is the function that request remote GPIO.
+   - this is the function that request remote GPIO.
 2. int remote_gpio_free(int service_num, unsigned int gpio);
 
     - this is the function that release remote GPIO.
