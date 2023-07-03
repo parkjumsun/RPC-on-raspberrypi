@@ -4,6 +4,21 @@ This project is an RPC project designed to provide remote access to GPIO through
 Below is an approximate structure of our project where we first load the implemented functions as a kernel module and then access them through a developed library to utilize the kernel functions:
 <img width = "70%" src="https://user-images.githubusercontent.com/126436201/249140026-74e71820-c780-49aa-b4b7-81dbb9a12cef.png">
 
+# project environment
+This project is implemented in the C programming language and utilizes certain kernel functions. Therefore, it is necessary to install the appropriate kernel version to use it.
+my test environment is like this
+   - language: C
+   - environment: Raspbian OS(kernel version 4.19) / ubuntu 20.04(kernel version 5.4.0)
+
+
+# setup
+first, you must compile c code and create .ko file. The provided makefile in conjunction with the code serves as a template for generating the .ko file. afterward the following steps can be followed to proceed with the project.
+
+1. load kernel module
+   - sudo insmod XX.ko
+2. make device file
+   - sudo sh mknod.sh
+3. compile your own code including _lib.c file
 
 
 # Implemented RPC
@@ -45,4 +60,13 @@ Below is an approximate structure of our project where we first load the impleme
 
 
 
-# 
+# advanced feature
+our project provide simple RPC function and two advanced RPC function.
+advanced feature is like this.
+1. multi writing
+   This feature enables writing values simultaneously to multiple GPIOs. Here is an overview of how this functionality operates.
+   
+
+2. interrupt on socket
+   This feature provide receving interrupt from remote and after receving doing some user defined function like interrupt handler
+   Here is an overview of how this functionality operates.
