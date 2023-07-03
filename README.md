@@ -73,5 +73,5 @@ advanced feature is like this.
    Here is an overview of how this functionality operates.
 
    <img width = "70%" src="https://user-images.githubusercontent.com/126436201/250572560-40eccd0a-72c1-4090-be4e-00e61b6cb8ee.png">
-   
+   <img width = "70%" src="https://user-images.githubusercontent.com/126436201/250572765-dacaec07-8745-4415-b6b5-d34f80c4d96f.png">
 
