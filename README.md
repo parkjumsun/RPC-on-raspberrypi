@@ -63,12 +63,14 @@ first, you must compile c code and create .ko file. The provided makefile in con
 # advanced feature
 our project provide simple RPC function and two advanced RPC function.
 advanced feature is like this.
-1. multi writing
+### 1. multi writing
+   
    This feature enables writing values simultaneously to multiple GPIOs. Here is an overview of how this functionality operates.
 
    <img width = "70%" src="https://user-images.githubusercontent.com/126436201/250567390-a9574ef5-9cdf-4f72-989d-d4dc2586fed8.png">
 
-3. interrupt on socket
+### 2. interrupt on socket
+   
    This feature provide receving interrupt from remote and after receving doing some user defined function like interrupt handler
    Here is an overview of how this functionality operates.
 
